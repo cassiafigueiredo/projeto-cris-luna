@@ -1,0 +1,15 @@
+.offcanvasLetras {
+    color: white;
+    text-decoration: none;
+}
+
+.navletras {
+  font-family: var(--fontedestaque);
+}
+
+@media (max-width: 767px) {
+  .offcanvasLetras {
+    color: black;
+  }
+}
+  
