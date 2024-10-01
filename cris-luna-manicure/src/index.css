@@ -10,9 +10,18 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'verah';
+  src: url('./src/assets/fonts/Verah___.ttf')  format('truetype');
+  font-weight: normal;
+}
+
+
+
 :root {
   --rosapink: #eca79e;
   --fontetitulo: 'crisluna', sans-serif;
-  --fontedestaque: 'italiana', sans-serif
+  --fontedestaque: 'italiana', sans-serif;
+  --fontenavbar: 'verah', sans-serif;
 }
 

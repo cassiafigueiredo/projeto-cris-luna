@@ -20,7 +20,7 @@ function Header() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className={styles.offcanvasLetras + ' offcanvas offcanvas-end'} tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div className={`offcanvas offcanvas-end w-75 ${styles.offcanvasLetras}`} tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Serviços</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -46,6 +46,9 @@ function Header() {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link text-reset" href="#">Manicure</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link text-reset" href="#">Contato</a>
                                 </li>
                             </ul>
                         </div>
