@@ -18,7 +18,7 @@ function Carrossel() {
             <motion.div className='inner'>
             
                 {imagens.map(imagem => (
-                    // eslint-disable-next-line react/jsx-key
+                    // eslint-disable-next-line react/jsx-keyy
                     <motion.div>
                         <img/>
                     </motion.div>
