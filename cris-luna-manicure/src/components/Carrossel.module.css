@@ -1,0 +1,33 @@
+
+.carrosselWrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner {
+    display: flex;
+}
+
+.imgUnha {
+    min-height: 200px;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.imgUnha img {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    pointer-events: none;
+    box-shadow:5px 6px 10px var(--rosapink);
+}
