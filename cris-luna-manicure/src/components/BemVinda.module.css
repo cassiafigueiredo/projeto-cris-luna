@@ -1,0 +1,19 @@
+.bemVinda {
+    
+    background-color: var(--rosapink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bvH2 {
+    color: white;
+    font-family: var(--fontenavbar);
+    font-size: 50px;
+}
+
+.pBV{
+    font-family: var(--fontenavbar);
+    font-size: 20px
+}
