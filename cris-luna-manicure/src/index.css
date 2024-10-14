@@ -26,6 +26,7 @@
 }
 
 body {
-  background-color: #eca79e;
+  background: linear-gradient(to bottom, #d46a5c, #eca79e23 );
+
 }
 
