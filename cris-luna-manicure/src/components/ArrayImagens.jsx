@@ -8,6 +8,7 @@ import imagem6 from '../assets/images/vermelho-acessorios.jpg'
  const imagens = [imagem1, imagem2, imagem3, imagem4, imagem5, imagem6]
 
  export default imagens
+ 
 
 
  

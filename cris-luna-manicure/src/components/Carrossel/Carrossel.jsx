@@ -1,36 +1,36 @@
-
-import { useState, useEffect, useRef } from 'react'
 import styles from './Carrossel.module.css'
-import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
 import PropTypes from 'prop-types'
 
 
 
 function Carrossel({arrayImages}) {
-    const carrossel = useRef()
-    const [width, setWidth] = useState(0)
-    useEffect(() => {
-        console.log(carrossel.current?.scrollWidth, carrossel.current?.offsetWidth)
-        setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
-    },[])
+   
     return(
-       <div className={styles.carrosselWrap}>
-
-        <motion.div ref={carrossel} className={styles.carrossel} whileTap={{ cursor: "grabbing"}}>
-            <motion.div className={styles.inner}
-            drag="x"
-            dragConstraints={{ right: 0, left: -width}}
-            >
-                {arrayImages.map(imagem => (
-                    <motion.div className={styles.imgUnha} key={imagem}>
-                        <img src={imagem}/>
-                    </motion.div>
+        <>
+      <Swiper className={`${styles.swiper} mySwiper`}
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        cardsEffect={{ slideShadows: false }}
+      >
+        
+        
+        {arrayImages.map(imagem => (
+        <SwiperSlide className={`swiper-slide ${styles.imgUnha}`} key={imagem}>
+            <img src={imagem}/>
+          </SwiperSlide>
+            
                 ))}
+        
+      </Swiper>
+    </>
+      
+                
 
-            </motion.div>
-        </motion.div>
-
-       </div> 
     )
 }
 
