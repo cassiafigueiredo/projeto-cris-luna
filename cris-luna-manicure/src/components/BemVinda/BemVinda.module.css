@@ -1,7 +1,11 @@
 .bemVinda {
+    background-image: url(C:\projeto-cris-luna\cris-luna-manicure\src\assets\images\boasvindas.png);
+    background-repeat: no-repeat;
+    
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
 .bvH2 {
@@ -14,4 +18,16 @@
     font-family: var(--fontenavbar);
     font-size: 25px;
     color: white;
+}
+
+@media (max-width:768px) {
+    .bemVinda {
+        background-image: url(C:\projeto-cris-luna\cris-luna-manicure\src\assets\images\tabletBoasVindas.png);
+    }
+}
+
+@media (max-width:1200px) {
+    .bemVinda{
+        background-image: url(C:\projeto-cris-luna\cris-luna-manicure\src\assets\images\desktopBoasVindas.png);
+    }
 }
