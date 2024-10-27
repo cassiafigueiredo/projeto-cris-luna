@@ -8,7 +8,7 @@
 h1 {
     
     color: var(--rosapink);
-    font-size: 80px;
+    font-size: 60px;
     font-family: var(--fontetitulo);
     font-weight: lighter;
 }
@@ -18,8 +18,5 @@ h1 {
 @media (max-width: 645px) {
     h1 {
         font-size: 50px;
-    }
-    .unhasInicio{
-        width: 150px;
     }
   }
