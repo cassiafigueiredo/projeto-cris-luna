@@ -1,5 +1,5 @@
-//import imagens from '../ArrayImagens';  
-//import Carrossel from '../Carrossel/Carrossel'
+import imagens from '../ArrayImagens';  
+import Carrossel from '../Carrossel/Carrossel'
 import styles from './BemVinda.module.css'
 import PropTypes from 'prop-types'
 
@@ -14,6 +14,9 @@ function BemVinda() {
             <p className={styles.bvP}>
                 Arrasta pra cima e vem conhecer meu trabalho!
             </p>
+        </div>
+        <div>
+            <Carrossel arrayImages={imagens} />
         </div>
     </div>
     )

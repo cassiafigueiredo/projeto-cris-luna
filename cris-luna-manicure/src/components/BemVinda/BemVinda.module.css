@@ -1,7 +1,4 @@
 .bemVinda {
-    background-image: url(../../../src/assets/images/lgDesktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,46 +19,3 @@
 
 
 
-
-@media (max-width:600px) {
-    .bemVinda {
-        background-image: url(../../assets/images/cellphone.png);
-        width: 100%;
-    }
-    .bvH2 {
-        font-size: 35px;
-        margin-top: 20px;
-    }
-    .bvP{
-        font-size: 17px;
-    }
-}
-
-@media (max-width:768px) {
-    .bemVinda {
-        background-image: url(../../../src/assets/images/tablet.png);
-        width: 100%;
-       
-    }
-    .bvH2 {
-        font-size: 45px;
-        margin-top: 10px;
-    }
-    .bvP{
-        font-size: 17px;
-    }
-}
-
-@media (max-width:400px) {
-    .bemVinda {
-        background-image: url(../../../src/assets/images/xllCellphone.png);
-        width: 100%;
-    }
-    .bvH2 {
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    .bvP{
-        font-size: 10px;
-    }
-}
